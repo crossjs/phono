@@ -16,15 +16,27 @@ $ npm install phono --save
 
 ```js
 var phono = require('phono');
-// use phono
+
+// Valid
+phono('13800138000').isValid();
+
 // China Mobile
-phono('17058888888').isCM();
-// Chila Telecom
-phono('17008888888').isCT();
-// Chila Unicom
-phono('17098888888').isCU();
-// Virtual
-phono('17058888888').isVT();
-phono('17008888888').isVT();
-phono('17098888888').isVT();
+phono('17050000000').isCM();
+phono('17050000000').isChinaMobile();
+
+// China Telecom
+phono('17000000000').isCT();
+phono('17000000000').isChinaTelecom();
+
+// China Unicom
+phono('17090000000').isCU();
+phono('17090000000').isChinaUnicom();
+
+// China Virtual
+phono('17050000000').isCV();
+phono('17050000000').isChinaVirtual();
+phono('17000000000').isCV();
+phono('17000000000').isChinaVirtual();
+phono('17090000000').isCV();
+phono('17090000000').isChinaVirtual();
 ```

@@ -7,6 +7,15 @@ var phono = require('../index');
 
 describe('phono', function() {
 
+  it('should be valid', function() {
+    expect(phono('13418888888').isValid()).to.be.ok();
+    expect(phono('13498888888').isValid()).to.be.ok();
+    expect(phono('14518888888').isValid()).to.be.ok();
+    expect(phono('17058888888').isValid()).to.be.ok();
+    expect(phono('17008888888').isValid()).to.be.ok();
+    expect(phono('17098888888').isValid()).to.be.ok();
+  });
+
   it('should be china mobile', function() {
     expect(phono('13418888888').isCM()).to.be.ok();
     expect(phono('13418888888').isChinaMobile()).to.be.ok();
@@ -29,16 +38,16 @@ describe('phono', function() {
   });
 
   it('should be virtual', function() {
-    expect(phono('17058888888').isVT()).to.be.ok();
-    expect(phono('17058888888').isVirtual()).to.be.ok();
+    expect(phono('17058888888').isCV()).to.be.ok();
+    expect(phono('17058888888').isChinaVirtual()).to.be.ok();
     expect(phono('17058888888').isCM()).to.be.ok();
 
-    expect(phono('17008888888').isVT()).to.be.ok();
-    expect(phono('17008888888').isVirtual()).to.be.ok();
+    expect(phono('17008888888').isCV()).to.be.ok();
+    expect(phono('17008888888').isChinaVirtual()).to.be.ok();
     expect(phono('17008888888').isCT()).to.be.ok();
 
-    expect(phono('17098888888').isVT()).to.be.ok();
-    expect(phono('17098888888').isVirtual()).to.be.ok();
+    expect(phono('17098888888').isCV()).to.be.ok();
+    expect(phono('17098888888').isChinaVirtual()).to.be.ok();
     expect(phono('17098888888').isCU()).to.be.ok();
   });
 
