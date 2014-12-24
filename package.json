@@ -1,6 +1,6 @@
 {
   "name": "phono",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "phone number validator",
   "keywords": [
     "spm",
@@ -19,7 +19,7 @@
     "url": "https://github.com/crossjs/phono.git"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "make test"
   },
   "bugs": {
     "url": "https://github.com/crossjs/phono/issues"
@@ -31,6 +31,7 @@
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-exec": "^0.4.6",
     "grunt-spm-server": "^0.1.0",
+    "istanbul": "^0.3.5",
     "load-grunt-tasks": "^0.6.0",
     "mocha": "^2.1.0"
   },

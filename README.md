@@ -2,6 +2,10 @@
 
 [![spm version](http://spmjs.io/badge/phono)](http://spmjs.io/package/phono)
 [![NPM version](https://img.shields.io/npm/v/phono.svg?style=flat-square)](https://npmjs.org/package/phono)
+[![Build Status](https://img.shields.io/travis/crossjs/phono.svg?style=flat-square)](https://travis-ci.org/crossjs/phono)
+[![NPM downloads](http://img.shields.io/npm/dm/phono.svg?style=flat-square)](https://npmjs.org/package/phono)
+[![David](http://img.shields.io/david/crossjs/phono.svg?style=flat-square)](https://npmjs.org/package/phono)
+[![David](http://img.shields.io/david/dev/crossjs/phono.svg?style=flat-square)](https://npmjs.org/package/phono)
 
 > SPM and NPM module, phone number validator.
 
